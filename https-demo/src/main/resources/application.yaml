@@ -1,0 +1,7 @@
+server:
+    port: 8443
+    ssl:
+        enabled: true
+        keyStore: classpath:test.keystore
+        keyStorePassword: 123456
+        keyPassword: 123456
