@@ -1,3 +1,8 @@
 # HTTP自动跳转HTTPS
 
 https-demo中的示例可以使用https访问。这个例子中，用户使用http访问时自动跳转到https。
+
+# Spring Boot中开启HTTPS
+默认情况下Spring Boot内嵌的Tomcat服务器会在8080端口启动HTTP服务，Spring Boot允许在application.properties中配置HTTP或HTTPS，但是不可同时配置，如果两个都启动，至少有一个要以编程的方式配置，Spring Boot官方文档建议在application.properties中配置HTTPS，因为HTTPS比HTTP更复杂一些，可以参考spring-boot-sample-tomcat-multi-connectors的实例。
+
+不能同时在application.properties中同时配置两个connector，所以要以编程的方式配置HTTP connector，然后重定向到HTTPS connector。这需要在配置类中配置一个TomcatEmbeddedServletContainerFactory bean。
