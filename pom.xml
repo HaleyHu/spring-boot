@@ -16,5 +16,6 @@
 		<module>https-demo2</module>
 		<module>scheduling-tasks</module>
 		<module>RESTfulWebService</module>
+		<module>consuming-rest</module>
 	</modules>
 </project>
