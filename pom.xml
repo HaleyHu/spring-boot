@@ -15,5 +15,6 @@
 		<module>https-demo</module>
 		<module>https-demo2</module>
 		<module>scheduling-tasks</module>
+		<module>RESTfulWebService</module>
 	</modules>
 </project>
