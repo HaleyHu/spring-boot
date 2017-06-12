@@ -17,5 +17,6 @@
 		<module>scheduling-tasks</module>
 		<module>RESTfulWebService</module>
 		<module>consuming-rest</module>
+		<module>jsp</module>
 	</modules>
 </project>
