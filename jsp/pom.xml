@@ -9,6 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
+<!-- 由于该项目已经有自己的一套继承关系，所以此处不继承spring-boot-starter-parent，改用依赖注入方式 -->
 <!-- 	<parent> -->
 <!-- 		<groupId>org.springframework.boot</groupId> -->
 <!-- 		<artifactId>spring-boot-starter-parent</artifactId> -->
@@ -20,6 +21,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- 依赖注入spring-boot-dependencies并相应增加各依赖的version信息 -->
 		<!-- Import dependency management from Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
